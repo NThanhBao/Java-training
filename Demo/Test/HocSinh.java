@@ -7,7 +7,6 @@ public class HocSinh extends ConNguoi{
     public HocSinh(){
 
     }
-
     public HocSinh(String hoTen, int Tuoi, String queQuan){
         super(hoTen,Tuoi,queQuan );
     }
@@ -21,4 +20,5 @@ public class HocSinh extends ConNguoi{
     public void hienThiThongTin() {
         super.hienThiThongTin();
     }
+
 }
