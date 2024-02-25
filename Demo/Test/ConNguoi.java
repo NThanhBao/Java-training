@@ -19,11 +19,22 @@ public class ConNguoi {
     public String getHoTen(){
         return hoTen;
     }
-    public int getTuoi() {
-        return Tuoi;
-    }
+    public int getTuoi() {return Tuoi;}
     public String getQueQuan() {
         return queQuan;
+    }
+    public void setHoTen(String hoTen) {
+        this.hoTen = hoTen;
+    }
+
+    // Setter for tuoi
+    public void setTuoi(int tuoi) {
+        this.Tuoi = tuoi;
+    }
+
+    // Setter for queQuan
+    public void setQueQuan(String queQuan) {
+        this.queQuan = queQuan;
     }
 
     public void themThongTin(Scanner sc){
@@ -36,4 +47,22 @@ public class ConNguoi {
         System.out.println("Tuoi: " + Tuoi);
         System.out.println("Que quan: " + queQuan);
     }
+
+    public void chinhSuaThongTin(Scanner sc) {
+        System.out.println("Nhap thong tin moi:");
+
+        System.out.print("Nhap ho ten moi: ");
+        String hoTenMoi = sc.nextLine();
+        this.setHoTen(hoTenMoi);
+
+        System.out.print("Nhap tuoi moi: ");
+        int tuoiMoi = sc.nextInt();
+        this.setTuoi(tuoiMoi);
+        sc.nextLine();
+
+        System.out.print("Nhap que quan moi: ");
+        String queQuanMoi = sc.nextLine();
+        this.setQueQuan(queQuanMoi);
+    }
+
 }

@@ -72,20 +72,38 @@ public class QuanLy {
         }
     }
 
-    public void chinhSua(Scanner sc) {
-//        System.out.print("Nhập tên học sinh cần chỉnh sửa thông tin: ");
-//        String ten = sc.nextLine();
-//        boolean found = false;
-//        for (ConNguoi hs : dsHocSinh) {
-//            if (hs.getHoTen().equals(ten)) {
-//                hs.chinhSuaThongTin(sc);
-//                found = true;
-//                break;
-//            }
-//        }
-//        if (!found) {
-//            System.out.println("Không tìm thấy học sinh có tên " + ten);
-//        }
+    public void chinhSuaHS(Scanner sc) {
+        sc.nextLine();
+        System.out.print("Nhap ten hoc sinh can chinh sua ");
+        String ten = sc.nextLine();
+        boolean ktra = false;
+        for (ConNguoi hs : dsHocSinh) {
+            if (hs.getHoTen().equals(ten)) {
+                hs.chinhSuaThongTin(sc);
+                ktra = true;
+                break;
+            }
+        }
+        if (!ktra) {
+            System.out.print("Khong tim thay hoc sinh: " + ten);
+            sc.nextLine();
+        }
     }
-
+    public void chinhSuaGV(Scanner sc) {
+        sc.nextLine();
+        System.out.print("Nhap ten giao vien can chinh sua ");
+        String ten = sc.nextLine();
+        boolean ktra = false;
+        for (ConNguoi hs : dsHocSinh) {
+            if (hs.getHoTen().equals(ten)) {
+                hs.chinhSuaThongTin(sc);
+                ktra = true;
+                break;
+            }
+        }
+        if (!ktra) {
+            System.out.println("Khong tim thay giao vien: " + ten);
+            sc.nextLine();
+        }
+    }
 }
