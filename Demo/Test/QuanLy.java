@@ -74,7 +74,7 @@ public class QuanLy {
 
     public void chinhSuaHS(Scanner sc) {
         sc.nextLine();
-        System.out.print("Nhap ten hoc sinh can chinh sua ");
+        System.out.print("Nhap ten hoc sinh can chinh sua: ");
         String ten = sc.nextLine();
         boolean ktra = false;
         for (ConNguoi hs : dsHocSinh) {
@@ -91,7 +91,7 @@ public class QuanLy {
     }
     public void chinhSuaGV(Scanner sc) {
         sc.nextLine();
-        System.out.print("Nhap ten giao vien can chinh sua ");
+        System.out.print("Nhap ten giao vien can chinh sua: ");
         String ten = sc.nextLine();
         boolean ktra = false;
         for (ConNguoi hs : dsHocSinh) {
@@ -106,4 +106,6 @@ public class QuanLy {
             sc.nextLine();
         }
     }
+
+
 }

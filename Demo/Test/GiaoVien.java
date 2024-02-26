@@ -14,9 +14,7 @@ public class GiaoVien extends ConNguoi{
         this.chungChi = chungChi;
     }
 
-    private void setchungChi(String chungChiMoi) {
-        this.chungChi = chungChiMoi;
-    }
+    private void setchungChi(String chungChiMoi) {this.chungChi = chungChiMoi;}
 
     @Override
     public void themThongTin(Scanner sc) {
@@ -36,9 +34,6 @@ public class GiaoVien extends ConNguoi{
         System.out.print("Nhap chung chi moi: ");
         String chungChiMoi = sc.nextLine();
         this.setchungChi(chungChiMoi);
-
-
     }
-
 
 }

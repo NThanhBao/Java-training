@@ -22,10 +22,6 @@ public class HocSinh extends ConNguoi{
     }
 
     @Override
-    public void chinhSuaThongTin(Scanner sc) {
-        super.chinhSuaThongTin(sc);
-    }
-
-
+    public void chinhSuaThongTin(Scanner sc) {super.chinhSuaThongTin(sc);}
 
 }

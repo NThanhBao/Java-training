@@ -1,5 +1,6 @@
 package Demo.Test;
 
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class ConNguoi {
@@ -23,19 +24,9 @@ public class ConNguoi {
     public String getQueQuan() {
         return queQuan;
     }
-    public void setHoTen(String hoTen) {
-        this.hoTen = hoTen;
-    }
-
-    // Setter for tuoi
-    public void setTuoi(int tuoi) {
-        this.Tuoi = tuoi;
-    }
-
-    // Setter for queQuan
-    public void setQueQuan(String queQuan) {
-        this.queQuan = queQuan;
-    }
+    public void setHoTen(String hoTen) {this.hoTen = hoTen;}
+    public void setTuoi(int tuoi) {this.Tuoi = tuoi;}
+    public void setQueQuan(String queQuan) {this.queQuan = queQuan;}
 
     public void themThongTin(Scanner sc){
         System.out.print("Ho Ten: "); hoTen = sc.nextLine();
@@ -58,11 +49,14 @@ public class ConNguoi {
         System.out.print("Nhap tuoi moi: ");
         int tuoiMoi = sc.nextInt();
         this.setTuoi(tuoiMoi);
-        sc.nextLine();
 
         System.out.print("Nhap que quan moi: ");
         String queQuanMoi = sc.nextLine();
         this.setQueQuan(queQuanMoi);
     }
+
+
+
+
 
 }
