@@ -13,6 +13,5 @@ public class App {
         A6 obj = new A6();
         obj.print();
     }
-
-
+    
 }
